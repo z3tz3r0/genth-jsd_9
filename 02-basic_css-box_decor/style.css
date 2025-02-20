@@ -1,0 +1,124 @@
+/* Import Fonts Here */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Mea+Culpa&family=Monomakh&display=swap');
+
+:root {
+    --bg-color: hsl(300, 3%, 8%);
+    --fs-color: hsl(336, 9%, 89%);
+}
+
+/* CSS Reset  */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+/* CSS Custom Layout */
+body {
+	max-width: 80vw;
+	height: 100vh;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+	background-color: var(--bg-color);
+	color: var(--fs-color);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+	margin: 2rem 0;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	margin: 0 auto;
+	height: 50%;
+}
+
+.box {
+	padding: 2rem;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 0.125em;
+	border: #333 solid 1px;
+}
+
+.bio__container {
+	margin-top: 3rem;
+}
+
+.bio__description {
+	margin-top: 2rem;
+}
+
+/* CSS Code Start Here! */
+.box1 {
+	background: rgba(255, 255, 255, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.box2 {
+    background-image: url(https://preview.redd.it/bptzx7ur4uj11.jpg?width=1080&crop=smart&auto=webp&s=113c096e278505d9baf827e4e28d31fd6e6a89d1);
+    background-position: center;
+    background-size: cover;
+}
+
+.box3 {
+    background-color: hsl(180, 29%, 82%);
+}
+
+.box4 {
+    font-family: "Monomakh", serif;
+}
+
+.box5 {
+    background-color: hsl(27, 30%, 63%);
+    color: hsl(336, 9%, 89%);
+}
+
+.box6 {
+    background-image: linear-gradient(to left, #f0acb5, #eaa7c0, #dda4cc, #cba4d8, #b2a5e1, #96acf0, #6bb4fa, #00bcfd, #00caf6, #00d3cd, #00d687, #2dd31d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+strong {
+    color: hsl(349, 81%, 46%);
+}
